@@ -1,8 +1,8 @@
 import * as fs from 'node:fs'
 import * as path from 'node:path'
 import { parse as parseYaml } from 'yaml'
-import { ConfigSchema, type RawRule } from './schema.js'
 import type { Config, Rule, PatternType } from '../types.js'
+import { ConfigSchema, type RawRule } from './schema.js'
 
 /**
  * Default config file names to search for
