@@ -97,7 +97,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "pnpm dlx ai-fs-permissions --op read \"$CLAUDE_FILE_PATH\""
+            "command": "pnpm dlx ai-fs-permissions --op read"
           }
         ]
       },
@@ -106,7 +106,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "pnpm dlx ai-fs-permissions --op write \"$CLAUDE_FILE_PATH\""
+            "command": "pnpm dlx ai-fs-permissions --op write"
           }
         ]
       },
@@ -115,7 +115,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "pnpm dlx ai-fs-permissions --op write \"$CLAUDE_FILE_PATH\""
+            "command": "pnpm dlx ai-fs-permissions --op write"
           }
         ]
       }
