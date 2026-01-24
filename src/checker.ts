@@ -1,3 +1,4 @@
+import * as path from 'node:path'
 import type {
   Config,
   Rule,
@@ -7,6 +8,16 @@ import type {
 } from './types.js'
 import { matchPath } from './matcher/index.js'
 import { formatBlockedMessage, formatAllowedMessage } from './output.js'
+
+/**
+ * Converts an absolute path to a relative path from cwd
+ */
+function toRelativePath(filePath: string): string {
+  if (path.isAbsolute(filePath)) {
+    return path.relative(process.cwd(), filePath)
+  }
+  return filePath
+}
 
 /**
  * Checks if an access level allows the given operation
@@ -58,8 +69,9 @@ export function checkPermission(
   filePath: string,
   operation: Operation
 ): CheckResult {
-  // Normalize path (remove leading ./ if present)
-  const normalizedPath = filePath.replace(/^\.\//, '')
+  // Normalize path: convert absolute to relative, remove leading ./
+  const relativePath = toRelativePath(filePath)
+  const normalizedPath = relativePath.replace(/^\.\//, '')
 
   // Find matching rule
   const match = findMatchingRule(config.rules, normalizedPath)

@@ -15,7 +15,7 @@ import { parseStdin, readStdin } from './stdin.js'
 import { EXIT_CODES } from './exit-codes.js'
 import type { Operation } from './types.js'
 
-const VERSION = '0.1.0'
+const VERSION = '0.1.1'
 
 function handleError(message: string): never {
   console.error(`Error: ${message}`)

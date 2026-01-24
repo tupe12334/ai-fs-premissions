@@ -1,6 +1,6 @@
 {
   "name": "ai-fs-permissions",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI tool to enforce file system permissions for AI agents. Protects sensitive files and folders from unauthorized access.",
   "type": "module",
   "main": "./dist/index.js",
