@@ -1,0 +1,23 @@
+version: 1
+
+rules:
+  # Protect centy configuration
+  - path: ".centy/**"
+    access: read
+    reason: "Centy configuration folder - modifications may break tooling"
+
+  # Protect Claude settings
+  - path: ".claude/**"
+    access: read
+    reason: "AI agent settings - must be modified by user only"
+
+  # Block all access to env files
+  - path: "**/.env*"
+    access: none
+    reason: "Environment secrets - sensitive data"
+
+  # Block key files
+  - path: "^.*\\.key$"
+    type: regex
+    access: none
+    reason: "Key files contain sensitive credentials"

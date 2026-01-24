@@ -1,12 +1,4 @@
-
- >
- > **Planning Mode**: Do not implement code changes. Brainstorm with the user, create an action plan, and update this issue before transitioning to "in-progress".
-
-# Implement ai-fs-permissions - File System Permissions Tool for AI Agents
-
-A platform-agnostic security tool that enforces file system permissions for AI agents, similar to block-no-verify but for file operations.
-
-## Problem Statement
+# # Problem Statement
 
 AI agents can read/write/delete any file. Project owners may want to:
 - Protect config folders (`.centy`, `.claude`, `.github`)

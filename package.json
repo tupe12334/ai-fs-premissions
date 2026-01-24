@@ -1,0 +1,77 @@
+{
+  "name": "ai-fs-permissions",
+  "version": "0.1.0",
+  "description": "CLI tool to enforce file system permissions for AI agents. Protects sensitive files and folders from unauthorized access.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "ai-fs-permissions": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "file-permissions",
+    "ai-safety",
+    "claude-code",
+    "gemini-cli",
+    "cursor",
+    "agent-governance",
+    "security",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "pnpm@10.26.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tupe12334/ai-fs-permissions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tupe12334/ai-fs-permissions/issues"
+  },
+  "homepage": "https://github.com/tupe12334/ai-fs-permissions#readme",
+  "dependencies": {
+    "minimatch": "^10.0.0",
+    "picomatch": "^4.0.0",
+    "yaml": "^2.7.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^22.0.0",
+    "@types/picomatch": "^3.0.0",
+    "@vitest/coverage-v8": "^3.0.0",
+    "eslint": "^9.0.0",
+    "husky": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.53.1",
+    "vitest": "^3.0.0"
+  }
+}

@@ -1,9 +1,9 @@
 {
   "displayNumber": 1,
-  "status": "planning",
+  "status": "closed",
   "priority": 1,
   "createdAt": "2026-01-24T20:32:27.668789+00:00",
-  "updatedAt": "2026-01-24T20:32:27.668789+00:00",
+  "updatedAt": "2026-01-24T20:43:07.027981+00:00",
   "compacted": false,
   "draft": false
 }
