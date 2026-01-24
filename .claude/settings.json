@@ -91,6 +91,33 @@
             "command": "pnpm dlx block-no-verify"
           }
         ]
+      },
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pnpm dlx ai-fs-permissions --op read \"$CLAUDE_FILE_PATH\""
+          }
+        ]
+      },
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pnpm dlx ai-fs-permissions --op write \"$CLAUDE_FILE_PATH\""
+          }
+        ]
+      },
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pnpm dlx ai-fs-permissions --op write \"$CLAUDE_FILE_PATH\""
+          }
+        ]
       }
     ]
   }
