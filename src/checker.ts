@@ -1,11 +1,20 @@
-import type { Config, Rule, Operation, AccessLevel, CheckResult } from './types.js'
+import type {
+  Config,
+  Rule,
+  Operation,
+  AccessLevel,
+  CheckResult,
+} from './types.js'
 import { matchPath } from './matcher/index.js'
 import { formatBlockedMessage, formatAllowedMessage } from './output.js'
 
 /**
  * Checks if an access level allows the given operation
  */
-function isOperationAllowed(access: AccessLevel, operation: Operation): boolean {
+function isOperationAllowed(
+  access: AccessLevel,
+  operation: Operation
+): boolean {
   switch (access) {
     case 'none':
       return false

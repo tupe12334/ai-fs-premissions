@@ -86,11 +86,7 @@ describe('checkPermission', () => {
 
   describe('negation rules', () => {
     it('allows access on negated paths', () => {
-      const result = checkPermission(
-        config,
-        '.centy/user-config.yaml',
-        'write'
-      )
+      const result = checkPermission(config, '.centy/user-config.yaml', 'write')
       expect(result.allowed).toBe(true)
       expect(result.rule).toBe('!.centy/user-config.yaml')
     })

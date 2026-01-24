@@ -27,7 +27,10 @@ If this file must be modified, ask the user to do it manually.`
 /**
  * Formats an allowed message
  */
-export function formatAllowedMessage(path: string, operation: Operation): string {
+export function formatAllowedMessage(
+  path: string,
+  operation: Operation
+): string {
   return `Operation permitted: ${operation} on '${path}'`
 }
 
