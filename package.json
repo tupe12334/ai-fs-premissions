@@ -57,6 +57,7 @@
   },
   "homepage": "https://github.com/tupe12334/ai-fs-permissions#readme",
   "dependencies": {
+    "arg": "^5.0.2",
     "minimatch": "^10.0.0",
     "picomatch": "^4.0.0",
     "yaml": "^2.7.0",
