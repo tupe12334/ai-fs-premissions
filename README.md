@@ -221,3 +221,4 @@ MIT
 ## Related Projects
 
 - [block-no-verify](https://github.com/tupe12334/block-no-verify) - Block `--no-verify` flag in git commands
+- [moadim](https://moadim.io/) — loop engineering: build, schedule & run agent loops.
